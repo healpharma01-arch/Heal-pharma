@@ -1,0 +1,24 @@
+{
+  "name": "heal-pharma",
+  "version": "1.0.0",
+  "description": "Your healing partner - E-commerce platform for pharmaceutical products",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\"",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "build": "npm run build --workspaces"
+  },
+  "keywords": [
+    "pharma",
+    "ecommerce",
+    "ordering",
+    "pharmaceutical"
+  ],
+  "author": "Heal Pharma Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
